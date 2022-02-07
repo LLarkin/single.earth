@@ -1,0 +1,148 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	transition: 1s;
+}
+
+.firstsection{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	max-width: width: 100%;
+
+}
+
+#landingvideo{
+	width: 100%;
+}
+
+.LandingText{
+	position: absolute;
+	text-align: center;
+	top: 1vh;
+	color: white;
+	width: 100%;
+	height: 300px;
+	
+	font-size: calc(2vw + 15px);
+	overflow: hidden;
+	font-family: 'Supermercado One', cursive;
+
+}
+#landingHeader{
+	margin-top: 2%;
+}
+.fa-tree{
+	font-size: 70px;
+}
+
+#text1,#text2,#text3,#text4{
+	transform: translateY(200px);
+	opacity: 0;
+}
+
+
+
+#tree{
+	font-size: 0px;
+
+}
+#tree2{
+		position: absolute;
+	text-align: center;
+	top: 3vh;
+	color: white;
+	width: 100%;
+	font-size: 90px;
+}
+#hamburger{
+	position: absolute;
+	top: 3vh;
+	left: 5vw;
+	font-size: calc(2vw + 30px);
+	color: white;
+	cursor: pointer;
+	z-index: 1001;
+	min-width:50px ;
+	min-height: 50px;
+}
+
+.navbar{
+	height: 0vh;
+	width: 100%;
+	position: absolute;
+	z-index: 1000;
+	transform: translateY(-30vh);
+background: rgb(250,0,161);
+background: linear-gradient(0deg, rgba(250,0,161,0.8858893899356618) 2%, rgba(12,231,161,1) 100%);
+display: flex;
+align-items: flex-end;
+}
+
+.navul{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.navuli{
+	list-style: none;
+}
+
+.navulia{
+	text-decoration: none;
+	font-size: 4em;
+	color: white;
+	font-family: 'Supermercado One', cursive;
+}
+.navuli:hover .underline{
+	width: 100%;
+}
+.underline{
+	width: 0%;
+	height: 5px;
+	background-color: white;
+}
+
+#hamburger:hover {
+	transform: rotate(90deg);
+}
+
+#times{
+	display: none;
+}
+
+
+#check{
+	display: none;
+}
+
+#check:checked ~ section .navbar{
+	height: 100vh;
+	transform: translateY(0vh);
+}
+
+
+
+#check:checked ~ section label #bars{
+	display: none;
+}
+
+
+#check:checked ~ section label #times{
+	display: unset;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px){
+	.navul{
+		flex-direction: column;
+		font-size: 10px;
+		height: 80%;
+	}
+}
